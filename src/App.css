@@ -5,9 +5,11 @@
   --primary-white : #fff;
   --primary-orange : #f9ab00;
   --primary-dark : rgba(255,255,255,0);
+  --primmary-red : #ef4035;
+  --primary-hover-red : #f33501;
 }
 body{
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /*--------------------NAVBAR--------------------*/
@@ -45,4 +47,57 @@ nav ul li {
 
 .navbar-nav > li > a:hover{
   border-top: 0.1875rem solid  var(--primary-orange);
+}
+
+
+
+/*--------------------------------------HEADER----------------------------------------------------------*/
+
+.header-wraper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  background: url(BGimg8.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  
+  height: 90vh;
+
+  
+
+}
+
+.main-info{
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/*--------------------------------------typed-text----------------------------------------------------------*/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/*--------------------------------------header main offer btn ----------------------------------------------------------*/
+.btn-main-offer{
+
+border: 1px solid var(--primmary-red);
+text-transform: uppercase;
+border-radius: 0;
+padding: 0.625rem 0.75rem 0.75rem 0.75rem  ;
+color: var(--primary-white);
+margin: 2rem;
+
 }
